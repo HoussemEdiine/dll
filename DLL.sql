@@ -21,3 +21,7 @@ CREATE TABLE Orders (
     REFERENCES Product(Product_id) 
 
 )
+
+ALTER TABLE Product ADD  Category VARCHAR2(20)
+
+ALTER TABLE Orders ADD OrderDate DATE  DEFAULT SYSDATE
